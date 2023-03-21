@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.welcome-content{
+    background: url(/resources/images/ROSEco.ffee-in-Marrickville-18-1024x681.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content-bg{
+    background: url(/resources/images/ROSEco.ffee-in-Marrickville-18-1024x681.png);
+    background-size: cover;
+    height: 50rem;
+    background-repeat: no-repeat;
+}
+.dark-bg{
+    background-color: #000;
+}
+.login-bg{
+    background: rgba(0,0,0,0.5),;
+}
