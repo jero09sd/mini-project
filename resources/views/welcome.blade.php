@@ -850,8 +850,9 @@
     </div>
     {{-- main-content --}}
     <div>
-
-
+        <div class="bg-[url('/img/hero-pattern.svg')]">
+            <!-- ... -->
+          </div>
     </div>
 </body>
 
