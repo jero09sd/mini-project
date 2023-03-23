@@ -10,6 +10,10 @@ module.exports = {
 
     theme: {
         extend: {
+            strokeWidth: {
+                '2': '2px',
+                '1': '2px',
+              },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
@@ -29,6 +33,13 @@ module.exports = {
                 'white': '#fff',
                 'dark': '#000'
               },
+              backgroundSize: {
+                'auto': 'auto',
+                'cover': 'cover',
+                'contain': 'contain',
+                '50%': '50%',
+                '16': '4rem',
+              }
         },
     },
 
