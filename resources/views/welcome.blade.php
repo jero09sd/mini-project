@@ -847,13 +847,14 @@
                 @endauth
             </div>
         @endif
+        <div>
+            <div class="main-logo justify-center">
+                <img class="object-contain h-screen w-screen" src="{{asset('images/Logo1.png')}}" alt="">
+            </div>
+        </div>
     </div>
     {{-- main-content --}}
-    <div>
-        <div class="bg-[url('/img/hero-pattern.svg')]">
-            <!-- ... -->
-          </div>
-    </div>
+    
 </body>
 
 </html>

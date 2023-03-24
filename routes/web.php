@@ -22,6 +22,10 @@ Route::get('/home', function () {
     return view('home');
 })->middleware(['auth', 'verified'])->name('home');
 
+Route::get('/products', function () {
+    return view('products');
+})->middleware(['auth', 'verified'])->name('products');
+
 Route::get('/Devs', function () {
     return view('Devs');
 })->middleware(['auth', 'verified'])->name('Devs');

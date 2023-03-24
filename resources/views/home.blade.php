@@ -1,10 +1,10 @@
 <x-app-layout>
-    <!-- component -->
+
 <div class="flex justify-center items-center">
-    <!--- more free and premium Tailwind CSS components at https://tailwinduikit.com/ --->
+   
     <div class="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
       <div role="main" class="flex flex-col items-center justify-center">
-        <h1 class="text-4xl font-semibold leading-9 text-center text-white dark:text-white">Teambangan Coffee Company</h1>
+        <h1 class="text-4xl font-semibold leading-9 text-center text-white dark:text-white"> <img class="object-contain h-24 center" src="{{asset('images/LogoWhite.png')}}" alt=""> </h1>
         <p class="text-base leading-normal text-center text-gray-600 dark:text-white mt-4 lg:w-1/2 md:w-10/12 w-11/12">If you're looking for the finest of Coffee's, that is able to lull your heart into the sweetest intoxication, what are you waiting for? come and let us serve you our TeamBangan's Finest Coffee</p>
       </div>
       <div class="lg:flex items-stretch md:mt-12 mt-8">

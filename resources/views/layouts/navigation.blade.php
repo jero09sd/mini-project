@@ -38,7 +38,7 @@
                             {{ __('Profile') }}
                         </x-dropdown-link>
                         <x-responsive-nav-link :href="route('analysis')">
-                            {{ __('Analysis') }}
+                            {{ __('Dashboard') }}
                         </x-responsive-nav-link>
                         <x-responsive-nav-link :href="route('Devs')">
                             {{ __('Devs') }}
@@ -91,7 +91,7 @@
                 </x-responsive-nav-link>
 
                 <x-responsive-nav-link :href="route('analysis')">
-                    {{ __('Analysis') }}
+                    {{ __('Dashboard') }}
                 </x-responsive-nav-link>
                 <x-responsive-nav-link :href="route('Devs')">
                     {{ __('Devs') }}
