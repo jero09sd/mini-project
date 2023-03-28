@@ -99,6 +99,7 @@
                                     Price
                                 </th>
                                 <th scope="col" class="px-6 py-3">
+                                    Quantity
                                 </th>
                                 <th scope="col" class="px-6 py-3">
                                 </th>
@@ -114,23 +115,25 @@
                                 </th>
                             </tr>
                         </thead>
+@foreach($products as $product)
+
                         <tbody>
                             <tr
                                 class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                                 <td class="w-4 p-4">
-
+                                    {{$product['id']}}
                                 </td>
                                 <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap">
-                                    Nescafe stick
+                                    {{$product['name']}}
                                 </th>
                                 <td class="px-6 py-4">
-                                    
+                                    category
                                 </td>
                                 <td class="px-6 py-4">
-                                    $2999
+                                    {{$product['price']}}
                                 </td>
                                 <td class="px-6 py-4">
-                                    
+                                    {{$product['quantity']}}
                                 </td>
                                 <td class="px-6 py-4">
 
@@ -152,118 +155,10 @@
                                         class="font-medium text-blue-600 border bg-white hover:bg-black hover:opacity-75 hover:text-white rounded-lg p-2">delete</a>
                                 </td>
                             </tr>
-                            <tr
-                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                                <td class="w-4 p-4">
-
-                                </td>
-                                <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap">
-                                    Nescafe stick
-                                </th>
-                                <td class="px-6 py-4">
-                                   
-                                </td>
-                                <td class="px-6 py-4">
-                                    $2999
-                                </td>
-                                <td class="px-6 py-4">
-
-                                </td>
-                                <td class="px-6 py-4">
-
-                                </td>
-                                <td class="px-6 py-4">
-
-                                </td>
-                                <td class="px-6 py-4">
-
-                                </td>
-                                <td class="px-6 py-4">
-
-                                </td>
-                              
-                                <td class="px-6 py-4 text-right flex space-x-0.5">
-                                    <a href="#"
-                                        class="font-medium text-blue-600 border bg-white hover:bg-black hover:opacity-75 hover:text-white rounded-lg p-2">Edit</a>
-                                    <a href="#"
-                                        class="font-medium text-blue-600 border bg-white hover:bg-black hover:opacity-75 hover:text-white rounded-lg p-2">delete</a>
-                                </td>
-                            </tr>
-                            <tr
-                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                                <td class="w-4 p-4">
-
-                                </td>
-                                <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap">
-                                    Nescafe stick
-                                </th>
-                                <td class="px-6 py-4">
-                                    
-                                </td>
-                                <td class="px-6 py-4">
-                                    $2999
-                                </td>
-                                <td class="px-6 py-4">
-                                    
-                                </td>
-                                <td class="px-6 py-4">
-
-                                </td>
-                                <td class="px-6 py-4">
-
-                                </td>
-                                <td class="px-6 py-4">
-
-                                </td>
-                                
-                                <td class="px-6 py-4">
-
-                                </td>
-                                <td class="px-6 py-4 text-right flex space-x-0.5">
-                                    <a href="#"
-                                        class="font-medium text-blue-600 border bg-white hover:bg-black hover:opacity-75 hover:text-white rounded-lg p-2">Edit</a>
-                                    <a href="#"
-                                        class="font-medium text-blue-600 border bg-white hover:bg-black hover:opacity-75 hover:text-white rounded-lg p-2">delete</a>
-                                </td>
-                            </tr>
-                            <tr
-                                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                                <td class="w-4 p-4">
-
-                                </td>
-                                <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap">
-                                    Nescafe stick
-                                </th>
-                                <td class="px-6 py-4">
-                                    
-                                </td>
-                                <td class="px-6 py-4">
-                                    $2999
-                                </td>
-                                <td class="px-6 py-4">
-                                   
-                                </td>
-                                <td class="px-6 py-4">
-
-                                </td>
-                               
-                                <td class="px-6 py-4">
-
-                                </td>
-                                <td class="px-6 py-4">
-
-                                </td>
-                                <td class="px-6 py-4">
-
-                                </td>
-                                <td class="px-6 py-4 text-right flex space-x-0.5">
-                                    <a href="#"
-                                        class="font-medium text-blue-600 border bg-white hover:bg-black hover:opacity-75 hover:text-white rounded-lg p-2">Edit</a>
-                                    <a href="#"
-                                        class="font-medium text-blue-600 border bg-white hover:bg-black hover:opacity-75 hover:text-white rounded-lg p-2">delete</a>
-                                </td>
-                            </tr>
-                            <tr
+                            
+                            
+                            {{-- add item --}}
+                            {{-- <tr
                             class="bg-gray border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <td class="w-4 p-4">
 
@@ -297,8 +192,9 @@
                                 <a href="#"
                                     class="font-medium text-blue-600 border bg-white hover:opacity-25 rounded-lg p-2">Add item</a>
                             </td>
-                        </tr>
+                        </tr> --}}
                         </tbody>
+                @endforeach
                     </table>
                 </div>
 
