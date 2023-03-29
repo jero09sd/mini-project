@@ -155,10 +155,10 @@
                                         class="font-medium text-blue-600 border bg-white hover:bg-black hover:opacity-75 hover:text-white rounded-lg p-2">delete</a>
                                 </td>
                             </tr>
-                            
+                            @endforeach
                             
                             {{-- add item --}}
-                            {{-- <tr
+                            <tr
                             class="bg-gray border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <td class="w-4 p-4">
 
@@ -189,12 +189,12 @@
 
                             </td>
                             <td class="px-6 py-4 text-right">
-                                <a href="#"
-                                    class="font-medium text-blue-600 border bg-white hover:opacity-25 rounded-lg p-2">Add item</a>
+                                <a href="http://127.0.0.1:8000/add"
+                                    class="font-medium text-blue-600 border bg-white hover:opacity-25 rounded-lg p-2">Add Product</a>
                             </td>
-                        </tr> --}}
+                        </tr>
                         </tbody>
-                @endforeach
+                
                     </table>
                 </div>
 

@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\AddProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -43,3 +44,6 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 Route::get('products',[ProductController::class,'show']);
+
+Route::view('add', 'addproduct');
+Route::post('add', [AddProductController::class, 'addproduct'] );
